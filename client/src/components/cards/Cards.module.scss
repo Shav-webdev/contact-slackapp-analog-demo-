@@ -1,0 +1,977 @@
+@import "../../themes/media";
+/*Promotion Card*/
+.promotion-card {
+  height: 220px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .promotion-card-highlight {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: auto;
+    height: 220px;
+    border-radius: 25px;
+    .promotion-meta {
+      left: 15px;
+      width: 90%;
+      position: relative;
+      .promotion-meta-section {
+        .promotion-title {
+          color: #eeb60f;
+          line-height: 1.2;
+          font-weight: bold;
+        }
+        .promotion-description {
+          color: #ffffff;
+          line-height: 1.2;
+          word-break: break-word;
+        }
+      }
+    }
+  }
+}
+
+/*Primary promotion Card*/
+.primary-promotion-card {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  .primary-promotion-title {
+    line-height: 1.2;
+    color: #eeb60f;
+    font-weight: bold;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+  }
+  .primary-promotion-description {
+    line-height: 1.2;
+    color: #ffffff;
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+  }
+}
+
+/* Service card*/
+.service-card {
+  position: relative;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-size: cover;
+  max-width: 450px;
+  margin: 10px auto;
+  width: 100%;
+  height: 100%;
+  .service-meta {
+    height: 100%;
+    .service-meta-section {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      height: 100%;
+      .service-icon-wrapper {
+        .service-icon-wrapper-hexagon {
+          position: relative;
+          .service-icon {
+            position: absolute;
+            //top: 60px;
+            //left: 70px;
+          }
+        }
+      }
+      .service-title {
+        color: #000000;
+        font-weight: bold;
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+/*Shops section cards*/
+.slider-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 10px;
+  height: 245px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 17.5px rgba(147, 147, 147, 0.16);
+  transition: 0.25s;
+  .slider-card-icon-wrapper {
+    height: 100px;
+  }
+  .slider-card-title-wrapper {
+    .slider-card-title {
+      line-height: 40px;
+      color: #000000;
+      font-weight: bold;
+      text-align: center;
+      transition: 0.2s;
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+  &:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    .slider-card-title {
+      color: #eeb60f;
+    }
+  }
+}
+
+/*Building shop card*/
+
+.building-shop-card {
+  text-align: center;
+  padding: 0.7rem;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  .building-shop-card-link {
+    display: inline-block;
+    transition: 0.3s;
+    border-radius: 10px;
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 10px 1px #ccc;
+      .building-shop-meta {
+        .building-shop-title {
+          color: #472c89;
+        }
+        .building-shop-description {
+          color: #346086;
+        }
+      }
+    }
+    .building-shop-img {
+      width: auto;
+      //border: 1px solid #bbbec6;
+      border-radius: 15px;
+    }
+    .building-shop-meta {
+      text-align: left;
+      //padding: 0.5rem;
+      .building-shop-title {
+        padding-top: 1rem;
+        font-size: 18px;
+        line-height: 1.2;
+        color: #604d8e;
+        font-weight: bold;
+      }
+      .building-shop-description {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #3a454e;
+        font-weight: 400;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+/*News Card*/
+
+.news-card {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  .news-card-highlight {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: auto;
+    height: 200px;
+    border-radius: 25px;
+    .news-meta {
+      left: 15px;
+      top: 100px;
+      width: 75%;
+      position: relative;
+      .news-meta-section {
+        .news-title {
+          color: #eeb60f;
+          line-height: 1.2;
+          font-weight: bold;
+        }
+        .news-description {
+          color: #ffffff;
+          word-break: keep-all;
+        }
+      }
+    }
+  }
+  &:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+/*Pleasure Card */
+
+.pleasure-card {
+  text-align: center;
+  padding: 0.7rem;
+  margin: 0 15px;
+  .pleasure-card-link {
+    display: inline-block;
+    transition: 0.3s;
+    border-radius: 10px;
+    &:hover {
+      .pleasure-meta {
+        .pleasure-title {
+          color: #9c7272;
+        }
+      }
+    }
+    .pleasure-img {
+      width: auto;
+      border-radius: 15px;
+    }
+    .pleasure-meta {
+      text-align: left;
+      padding: 0.5rem;
+      .pleasure-title {
+        padding-top: 1rem;
+        font-size: 18px;
+        line-height: 1.2;
+        color: #434343;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/*Info section*/
+
+.info-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid #000c17;
+  .info-icon-wrapper {
+    svg {
+    }
+  }
+
+  .info-meta-section {
+    text-align: left;
+    .info-count {
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .info-title {
+      font-size: 16px;
+    }
+  }
+}
+
+/*About us gallery card*/
+
+.about-us-img-wrapper {
+  max-width: 300px;
+  .about-us-img {
+    height: 250px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $screen-min-xs-xs) {
+  /*Promotion Card*/
+
+  .promotion-card {
+    height: 220px;
+    max-width: 450px;
+    .promotion-card-highlight {
+      height: 220px;
+      .promotion-meta {
+        top: 110px;
+        .promotion-meta-section {
+          .promotion-title {
+          }
+          .promotion-description {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+    &:first-child {
+      margin: 15px 0;
+    }
+  }
+  .primary-promotion-card {
+    height: 220px;
+    max-width: 450px;
+    margin: 0 auto;
+    .primary-promotion-title {
+      left: 15px;
+      top: 100px;
+    }
+    .primary-promotion-description {
+      left: 15px;
+      top: 165px;
+      text-align: left;
+      visibility: hidden;
+    }
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 15px;
+    }
+  }
+
+  .service-title {
+    font-size: 14px;
+  }
+  .service-icon-wrapper {
+    padding: 30px 0;
+    .service-icon-wrapper-hexagon {
+      .service-icon {
+        top: 60px;
+        left: 70px;
+      }
+    }
+  }
+
+  /*Building shop card*/
+
+  .building-shop-card {
+    .building-shop-card-link {
+      &:hover {
+        .building-shop-meta {
+          .building-shop-title {
+          }
+          .building-shop-description {
+          }
+        }
+      }
+      .building-shop-img {
+        height: 180px;
+      }
+      .building-shop-meta {
+        padding: 0.5rem 1.7rem;
+        .building-shop-title {
+        }
+        .building-shop-description {
+        }
+      }
+    }
+  }
+
+  .pleasure-card {
+    .pleasure-img {
+      height: 150px;
+    }
+  }
+  /*Info section*/
+
+  .info-card {
+    padding: 30px 5px;
+    .info-icon-wrapper {
+      svg {
+        width: 30px !important;
+        height: 30px !important;
+      }
+    }
+
+    .info-meta-section {
+      .info-count {
+        font-size: 16px;
+        font-weight: 800;
+      }
+      .info-title {
+        font-size: 13px;
+      }
+    }
+  }
+
+  /*About us gallery card*/
+
+  .about-us-img-wrapper {
+    .about-us-img {
+      height: 180px;
+    }
+  }
+}
+
+@media (min-width: $screen-min-xs-s) {
+  /*Promotion Card*/
+  .promotion-card {
+    .promotion-card-highlight {
+      .promotion-meta {
+        .promotion-meta-section {
+          .promotion-description {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .primary-promotion-card {
+    .primary-promotion-title {
+    }
+    .primary-promotion-description {
+      visibility: visible;
+    }
+  }
+
+  .service-card {
+    .service-title {
+      font-size: 16px;
+    }
+    .service-icon-wrapper {
+      padding: 30px 0;
+      .service-icon-wrapper-hexagon {
+        .service-icon {
+          top: 60px;
+          left: 73px;
+        }
+      }
+    }
+  }
+  .slider-card-title {
+    font-size: 16px;
+  }
+
+  .news-card {
+    .news-description {
+      line-height: 1.2;
+    }
+  }
+
+  /*Building shop card*/
+  .building-shop-card {
+    .building-shop-card-link {
+      &:hover {
+        .building-shop-meta {
+          .building-shop-title {
+          }
+          .building-shop-description {
+          }
+        }
+      }
+      .building-shop-img {
+        height: 220px;
+      }
+      .building-shop-meta {
+        padding: 0.5rem 3rem;
+        .building-shop-title {
+        }
+        .building-shop-description {
+        }
+      }
+    }
+  }
+
+  .pleasure-card {
+    .pleasure-img {
+      height: 180px;
+    }
+  }
+
+  /*Info section*/
+  .info-card {
+    .info-icon-wrapper {
+      svg {
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }
+
+    .info-meta-section {
+      .info-count {
+        font-size: 16px;
+        font-weight: 800;
+      }
+      .info-title {
+        font-size: 13px;
+      }
+    }
+  }
+
+  /*About us gallery card*/
+  .about-us-img-wrapper {
+    .about-us-img {
+      height: 150px;
+    }
+  }
+}
+@media (min-width: $screen-min-xs) {
+  /*Promotion Card*/
+
+  .promotion-card {
+    height: 220px;
+    max-width: 480px;
+    .promotion-card-highlight {
+      height: 220px;
+      .promotion-meta {
+        top: 130px;
+        .promotion-meta-section {
+          .promotion-title {
+          }
+          .promotion-description {
+          }
+        }
+      }
+    }
+  }
+  .primary-promotion-card {
+    height: 220px;
+    max-width: 480px;
+    .primary-promotion-title {
+    }
+    .primary-promotion-description {
+    }
+  }
+  .service-card {
+    .service-title {
+      font-size: 20px;
+    }
+  }
+
+  /*Building shop card*/
+  .building-shop-card {
+    height: 100%;
+    max-width: 300px;
+    .building-shop-card-link {
+      height: 100%;
+      &:hover {
+        .building-shop-meta {
+          .building-shop-title {
+          }
+          .building-shop-description {
+          }
+        }
+      }
+      .building-shop-img {
+        height: 200px;
+      }
+      .building-shop-meta {
+        padding: 0.5rem 1rem;
+        .building-shop-title {
+          font-size: 16px;
+          line-height: 1.2;
+        }
+        .building-shop-description {
+          font-size: 12px;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+
+  .pleasure-card {
+    .pleasure-img {
+      height: 160px;
+    }
+  }
+
+  /*Info section*/
+  .info-card {
+    .info-icon-wrapper {
+    }
+    .info-meta-section {
+      .info-count {
+        font-size: 18px;
+        font-weight: 800;
+      }
+      .info-title {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /*About us gallery card*/
+  .about-us-img-wrapper {
+    .about-us-img {
+    }
+  }
+}
+@media (min-width: $screen-min-sm) {
+  .promotion-card {
+    height: 220px;
+    max-width: 480px;
+    .promotion-card-highlight {
+      height: 220px;
+      .promotion-meta {
+        top: 100px;
+        .promotion-meta-section {
+          .promotion-title {
+          }
+          .promotion-description {
+          }
+        }
+      }
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .primary-promotion-card {
+    height: 480px;
+    max-width: 480px;
+    .primary-promotion-title {
+      top: 40px;
+      left: 30px;
+    }
+    .primary-promotion-description {
+      top: 400px;
+      right: 50px;
+      text-align: right;
+    }
+  }
+  .service-meta-section {
+    .service-icon-wrapper {
+      .service-icon-wrapper-hexagon {
+        svg {
+          width: 200px;
+          height: 150px;
+        }
+        .service-icon {
+          top: 45px;
+          left: 65px;
+          svg {
+            height: 75px;
+            width: 75px;
+          }
+        }
+      }
+    }
+    .service-title {
+      font-size: 18px;
+    }
+  }
+
+  /*Building shop card*/
+  .building-shop-card {
+    height: 100%;
+    max-width: 300px;
+    .building-shop-card-link {
+      height: 100%;
+      &:hover {
+        .building-shop-meta {
+          .building-shop-title {
+          }
+          .building-shop-description {
+          }
+        }
+      }
+      .building-shop-img {
+        height: 130px;
+      }
+      .building-shop-meta {
+        padding: 0.5rem 1rem;
+        .building-shop-title {
+          font-size: 14px;
+          line-height: 1.4;
+          margin-bottom: 1rem;
+        }
+        .building-shop-description {
+          font-size: 12px;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-min-md) {
+  .service-card {
+    max-width: 525px;
+    height: 350px;
+    .service-title {
+      font-size: 22px;
+    }
+
+    .service-icon-wrapper {
+      padding: 45px 0;
+      .service-icon-wrapper-hexagon {
+        .service-icon {
+          top: 40px;
+          left: 65px;
+        }
+      }
+    }
+  }
+
+  .slider-card-title {
+    font-size: 18px;
+  }
+  .news-card {
+    height: 280px;
+    .news-card-highlight {
+      height: 280px;
+      .news-meta {
+        left: 15px;
+        top: 150px;
+        .news-meta-section {
+          .news-title {
+          }
+          .news-description {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  .pleasure-card {
+    .pleasure-img {
+      height: 180px;
+    }
+  }
+
+  .primary-promotion-card {
+    max-width: 100%;
+    .primary-promotion-title {
+    }
+    .primary-promotion-description {
+      left: 100px;
+    }
+  }
+
+  /*Building shop card*/
+  .building-shop-card {
+    max-width: 400px;
+    .building-shop-card-link {
+      &:hover {
+        .building-shop-meta {
+          .building-shop-title {
+          }
+          .building-shop-description {
+          }
+        }
+      }
+      .building-shop-img {
+        height: 190px;
+      }
+      .building-shop-meta {
+        .building-shop-title {
+          font-size: 16px;
+          line-height: 1.4;
+          margin-bottom: 1rem;
+        }
+        .building-shop-description {
+          font-size: 14px;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+
+  /*About us gallery card*/
+  .about-us-img-wrapper {
+    .about-us-img {
+      height: 250px;
+    }
+  }
+
+  /*Info section*/
+
+  .info-card {
+    padding: 40px 5px;
+    .info-icon-wrapper {
+    }
+    .info-meta-section {
+      .info-count {
+      }
+      .info-title {
+      }
+    }
+  }
+}
+@media (min-width: $screen-min-lg) {
+  .service-card {
+    max-width: 525px;
+    height: 400px;
+    .service-title {
+      font-size: 26px;
+    }
+
+    .service-icon-wrapper {
+      .service-icon-wrapper-hexagon {
+        .service-icon {
+        }
+      }
+    }
+  }
+  .primary-promotion-title {
+    font-size: 25px;
+    max-width: 350px;
+  }
+  .primary-promotion-description {
+    font-size: 16px;
+    max-width: 550px;
+  }
+  .promotion-title {
+    font-size: 18px;
+  }
+  .promotion-description {
+    font-size: 14px;
+  }
+
+  .slider-card-title {
+    font-size: 20px;
+  }
+
+  /*Building shop card*/
+  .building-shop-card {
+    height: 100%;
+    .building-shop-card-link {
+      height: 100%;
+      &:hover {
+        .building-shop-meta {
+          .building-shop-title {
+          }
+          .building-shop-description {
+          }
+        }
+      }
+      .building-shop-img {
+        height: 220px;
+      }
+      .building-shop-meta {
+        padding: 0.5rem;
+        .building-shop-title {
+          font-size: 18px;
+          line-height: 1.4;
+        }
+        .building-shop-description {
+          font-size: 14px;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+  .news-card {
+    .news-description {
+      line-height: 2;
+    }
+  }
+
+  .pleasure-card {
+    .pleasure-img {
+      height: 250px;
+    }
+  }
+}
+@media (min-width: $screen-min-xl) {
+  .slider-card-title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1800px) {
+}
+
+
+/*shops page cards*/
+
+.shops-page-card{
+  .shops-card-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px #93939329;
+    border-radius: 10px;
+    //padding: 30px;
+    padding: 58px;
+    margin: 10px;
+    border: 1px solid #CCC9C9;
+    transition:all .5s;
+    //height: 256px;
+    //min-width: 185px;
+    img{
+      width: 90px;
+      height:90px;
+    }
+    p{
+      font-size: 12px;
+      font-weight: bold;
+      color: #2B2B2B;
+      padding-top: 10px;
+      display: none;
+    }
+  }
+  .shops-card-img:hover{
+    box-shadow: 0 5px 10px #CCC9C9;
+  }
+}
+@media (min-width: $screen-min-sm) {
+  .shops-page-card{
+    .shops-card-img{
+      p{
+        font-size: 11px;
+      }
+    }
+  }
+}
+@media (min-width: $screen-min-lg) {
+  .shops-page-card{
+        .shops-card-img{
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+}
+
+/*Useful information page card*/
+.help-info-card{
+  margin: 0 30px 30px 0;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px #93939329;
+  overflow: hidden;
+  transition:all .5s;
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  p{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #707070;
+  }
+}
+.help-info-card:hover{
+  box-shadow: 0 5px 10px #CCC9C9;
+}
+@media (max-width: 575px) {
+  .help-info-card{
+    margin-right: 0;
+  }
+}

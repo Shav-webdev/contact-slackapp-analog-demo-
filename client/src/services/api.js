@@ -1,0 +1,8 @@
+export const GET = "GET"
+export const PUT = "PUT"
+export const DELETE = "DELETE"
+export const POST = "POST"
+export const AUTH_LOGIN_URL = "/api/auth/login"
+export const AUTH_LOGOUT_URL = "/api/auth/logout"
+export const AUTH_REGISTER_URL = "/api/auth/register"
+export const WORKSPACE_URL = "/api/workspace"

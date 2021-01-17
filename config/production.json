@@ -1,0 +1,10 @@
+{
+  "port": "5000",
+  "mongo_uri": "mongodb+srv://garageAdmin:garage2020@cluster0.vjhoh.mongodb.net/garage_mall?retryWrites=true&w=majority",
+  "jwt_key": "HelloGarageMall",
+  "jwt_expiresIn": "7200",
+  "baseUrl": "http://localhost:5000",
+  "emailSender": "info.contactmeteam@gmail.com",
+  "emailSendGridAPI":
+  "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"
+}

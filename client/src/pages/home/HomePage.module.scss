@@ -1,0 +1,14 @@
+.homepage {
+  min-height: calc(100vh - 140px);
+  background: rgb(9,121,28);
+  background: linear-gradient(90deg, rgba(9,121,28,1) 0%, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 82%);
+  .buttons-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+    a:first-child {
+      margin-right: 2rem;
+    }
+  }
+}

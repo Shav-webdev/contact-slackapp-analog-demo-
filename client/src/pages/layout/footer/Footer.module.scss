@@ -1,0 +1,42 @@
+@import "src/themes/media";
+.footer {
+  height: 60px;
+  background-color: #19212b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .copyright-section {
+    text-align: center;
+    vertical-align: middle;
+    .copyright-section-txt {
+      font-size: 1rem;
+      letter-spacing: 0;
+      line-height: 1.1875rem;
+      color: #b9b9b9;
+    }
+  }
+}
+
+
+
+
+@media (min-width: $screen-min-xs-xs) {
+
+}
+
+@media (min-width: $screen-min-xs-s) {
+}
+@media (min-width: $screen-min-xs) {
+}
+@media (min-width: $screen-min-sm) {
+}
+
+@media (min-width: $screen-min-md) {
+
+}
+@media (min-width: $screen-min-lg) {
+}
+@media (min-width: $screen-min-xl) {
+}
+@media (min-width: 1800px) {
+}

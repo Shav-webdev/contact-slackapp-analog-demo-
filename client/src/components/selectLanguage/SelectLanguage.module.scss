@@ -1,0 +1,11 @@
+@import "src/themes/vars";
+
+.select-wrapper {
+  text-align: center;
+  :global {
+    .ant-select,
+    .ant-select-selector {
+      border-radius: $lang-select-border-radius;
+    }
+  }
+}
